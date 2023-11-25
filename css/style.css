@@ -550,6 +550,17 @@ a:focus {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.page-header2 {
+    position: relative;
+    margin-bottom: 45px;
+    padding: 210px 0 90px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/page-header2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .page-header h2 {
     position: relative;
@@ -558,6 +569,16 @@ a:focus {
     font-weight: 700;
     margin-bottom: 20px;
     padding-bottom: 5px;
+}
+
+.page-header2 h2 {
+    position: relative;
+    color: #FDBE33;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+
 }
 
 .page-header h2::after {
@@ -570,6 +591,19 @@ a:focus {
     background: #FDBE33;
 }
 
+
+.page-header2 h2::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    left: calc(50% - 50px);
+    bottom: 0;
+    background: #FDBE33;
+}
+
+
+
 .page-header a {
     position: relative;
     padding: 0 12px;
@@ -577,9 +611,24 @@ a:focus {
     color: #ffffff;
 }
 
+.page-header2 a {
+    position: relative;
+    padding: 0 12px;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+
+
+
 .page-header a:hover {
     color: #FDBE33;
 }
+
+.page-header2 a:hover {
+    color: #FDBE33;
+}
+
 
 .page-header a::after {
     position: absolute;
@@ -592,6 +641,23 @@ a:focus {
     color: #ffffff;
 }
 
+.page-header2 a::after {
+    position: absolute;
+    content: "/";
+    width: 8px;
+    height: 8px;
+    top: -2px;
+    right: -7px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.page-header2 a:last-child::after {
+    display: none;
+}
+
+
+
 .page-header a:last-child::after {
     display: none;
 }
@@ -600,7 +666,12 @@ a:focus {
     .page-header {
         padding: 60px 0;
     }
-    
+}
+    @media (max-width: 991.98px) {
+        .page-header2 {
+            padding: 60px 0;
+        }
+        
     .page-header h2 {
         font-size: 45px;
     }
@@ -614,14 +685,47 @@ a:focus {
     .page-header {
         padding: 45px 0;
     }
-    
-    .page-header h2 {
+}
+ @media (max-width: 767.98px) {
+        .page-header2 {
+            padding: 45px 0;
+        }
+
+    .page-header2 h2 {
         font-size: 35px;
     }
     
-    .page-header a {
+    .page-header2 a {
         font-size: 18px;
     }
+
+    .page-header h2 {
+        font-size: 45px;
+    }
+    
+    .page-header2 a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .page-header {
+        padding: 45px 0;
+    }
+    
+ @media (max-width: 767.98px) {
+        .page-header2 {
+            padding: 45px 0;
+        }
+
+    .page-header2 h2 {
+        font-size: 35px;
+    }
+    
+    .page-header2 a {
+        font-size: 18px;
+    }
+}
 }
 
 
